@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600;700&display=swap');
+
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+:root {
+	--primary-color: #0471d8;
+	--text-color: #727171;
+
+}
+
+/* header*/
+	.header {
+		display: flex;
+		justify-content: space-between;
+		margin-left: 100px;
+		margin-right: 100px;
+		padding: 10px;
+		height: 50px;
+	   
+	   font-size: 20px;
+	}
+	
+	.header-logo img {
+		height: 25px;
+		
+		
+	}
+	
+	ul {
+		display: flex;
+		list-style: none;
+		gap: 20px;
+	}
+	
+	ul li a{
+		text-decoration: none;
+		color: var(--text-color);
+	}
+
+	a:hover {
+		color: var(--primary-color);
+		background: transparent;
+		 box-shadow:none;
+	}
+		  
+	
+
+html {
+	font-size: 25px;
+}
+
+body {
+	font-family: Inter, sans-serif;
+	background-color: black;
+	color: white;
+	
+}
+
+/* table */
+
+.table-services {
+    max-width: 1500px;
+	width: 90%;
+	margin: 0 auto;
+	display: grid;
+	padding: 5rem;
+	gap: 4rem;
+    align-items: center;
+}
+
+h1 {
+    display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+}
+
+.styled-table {
+    border-collapse: collapse;
+    margin: 25px 0;
+    font-size: 0.9em;
+    font-family: sans-serif;
+    min-height: 400px;
+    min-width: 1000px;
+    box-shadow: 0 0 20px var(--primary-color);
+    
+}
+
+.styled-table thead tr {
+    background-color:var(--primary-color);
+    color: #ffffff;
+    text-align: left;
+}
+
+.styled-table th,
+.styled-table td {
+    padding: 12px 15px;
+}
+
+.styled-table tbody tr {
+    border-bottom: 1px solid #dddddd;
+}
+
+.styled-table tbody tr:nth-of-type(even) {
+    background-color: #f3f3f3;
+}
+
+.styled-table tbody tr:last-of-type {
+    border-bottom: 2px solid var(--primary-color);
+}
+
+.styled-table tbody tr.active-row {
+    font-weight: bold;
+    color: var(--primary-color);
+}
+

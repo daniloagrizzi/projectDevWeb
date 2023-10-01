@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato</title>
+    <link rel="stylesheet" href="estilo/contato.css">
+</head>
+<body>
+    <div class="header">
+        <div class="header-logo"><img src="assets/img/download.png" alt=""></div>
+        <ul>
+          <li> <a href="index.html">Home</a></li>
+          <li><a href="curiculo.html">Currículo</a></li>
+          <li><a href="#">Github</a></li>
+          <li><a href="serviços.html">Serviços</a></li>
+          <li><a href="contato.html">Contato</a></li>
+        </ul>
+      </div>
+<section class="contato-content">
+    
+    <form class="form">
+      
+        <div class="input-box">
+            <label>Nome completo</label>
+            <input type="text" name="nome" placeholder="Digite seu nome" required="" >
+        </div>
+        
+        <div class="column">
+        
+            <div class="input-box">
+              <label>E-mail</label>
+              <input type="email" name="email" placeholder="Digite seu e-mail" required="" >
+            </div>
+        
+            <div class="input-box">
+              <label>Telefone</label>
+              <input type="text" name="telefone" placeholder="Digite seu telefone" required="">
+            </div>
+        
+        </div>
+        
+        <div class="gender-box">
+    
+          
+          <div class="gender-option">
+            
+              <div class="gender">
+              
+                  <input type="radio" name="sexo" value="Masculino" id="check-male">
+                  <label for="check-male">Pessoa Física</label>
+            
+              </div>
+            
+              <div class="gender">
+              
+                 <input type="radio" name="sexo" value="Feminino" id="check-female">
+                 <label for="check-female">Pessoa Jurídica</label>
+              
+              </div>
+  
+          </div>
+  
+        </div>
+        
+          <div class="input-box">
+          
+              <label>Serviço desejado:</label>                        
+              <div class="column">
+              
+                  <div class="select-box">
+                  
+                      <select name="aprender">
+                        
+                          <option value="" selected>Selecione</option>
+                          <option value="Página estática">Página estática</option>
+                          <option value="Página dinâmica">Página dinâmica</option>
+                          <option value="Site completo">Site completo</option>
+                          <option value="CRUD">CRUD</option>
+                         
+                      
+                      </select>
+                  
+                  </div>
+              
+              
+              </div>
+        
+          </div>
+          
+          <label >
+            Breve descrição do que deseja contratar:
+          </label> 
+  
+          <div class="input-box">
+  
+              <textarea name="mensagem" cols="30" rows="3" required></textarea>
+          
+          </div>
+        
+        <button>Enviar Dados</button>
+    
+      </form>
+  
+  </div>
+      
+    </section>
+</body>
+</html>

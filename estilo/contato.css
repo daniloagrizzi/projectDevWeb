@@ -1,0 +1,232 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600;700&display=swap');
+
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+:root {
+	--primary-color: #0471d8;
+	--text-color: #727171;
+
+}
+
+/* header*/
+	.header {
+		display: flex;
+		justify-content: space-between;
+		margin-left: 100px;
+		margin-right: 100px;
+		padding: 10px;
+		height: 50px;
+	   
+	   font-size: 20px;
+	}
+	
+	.header-logo img {
+		height: 25px;
+		
+		
+	}
+	
+	ul {
+		display: flex;
+		list-style: none;
+		gap: 20px;
+	}
+	
+	ul li a{
+		text-decoration: none;
+		color: var(--text-color);
+	}
+
+	a:hover {
+		color: var(--primary-color);
+		background: transparent;
+		 box-shadow:none;
+	}
+		  
+	
+
+html {
+	font-size: 25px;
+}
+
+body {
+	font-family: Inter, sans-serif;
+	background-color: black;
+	color: white;
+	
+}
+
+/* Form */
+
+.contato-content {
+    display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  padding: 10px;
+}
+
+.form {
+    background-color: #fff;
+    width: 800px;
+    padding: 20px;
+    border-radius: 3%;
+    box-shadow: 5px 5px 5px 5px var(--primary-color);
+
+}
+.container-form {
+
+    position: relative;
+    max-width: 500px;
+    width: 100%;
+    margin: auto;
+    background: #FFF;
+    padding: 25px;
+    border-radius: 8px;
+    
+    
+  
+  }
+  
+  .container-form .title-form {
+    font-size: 1.2em;
+    color: var(--primary-color);
+    font-weight: 600;
+    text-align: center;
+  }
+  
+  .container-form .form {
+    margin-top: 15px;
+    
+    
+  }
+  
+  .form .input-box {
+    width: 100%;
+    margin-top: 10px;
+  }
+  
+  .input-box label {
+    color: var(--text-color);
+  }
+
+  body label {
+    color: var(--text-color);
+  }  
+  .form :where(.input-box input, .select-box) {
+    
+    position: relative;
+    height: 35px;
+    width: 100%;
+    outline: none;
+    font-size: 1rem;
+    color: var(--primary-color);
+    margin-top: 5px;
+    border: 1px solid #A4E3F0;
+    border-radius: 6px;
+    padding: 0 15px;
+    background: #E9F8FB;
+  
+  }
+  
+  .input-box input:focus {
+    box-shadow: 0 1px 0 var(--primary-color);
+  }
+  
+  .form :where(.input-box textarea) {
+    
+    position: relative;
+    height: 100px;
+    width: 100%;
+    outline: none;
+    font-size: 1rem;
+    color: var(--primary-color);
+    margin-top: 5px;
+    border: 1px solid #A4E3F0;
+    border-radius: 6px;
+    padding: 10px;
+    background: #E9F8FB;
+  
+  }
+  
+  .input-box textarea:focus {
+    box-shadow: 0 1px 0 var(--primary-color);
+  }
+  
+  .form .column {
+    display: flex;
+    column-gap: 15px;
+  }
+  
+  .form .gender-box {
+    margin-top: 10px;
+  }
+  
+  .form :where(.gender-option, .gender) {
+    display: flex;
+    align-items: center;
+    column-gap: 50px;
+    flex-wrap: wrap;
+  }
+  
+  .form .gender {
+    column-gap: 5px;
+  }
+  
+  .gender input {
+  
+    accent-color: var(--primary-color);
+    float: left;
+    width: 15px;
+    height: 15px;
+  
+  }
+  
+  .form :where(.gender input,.gender textarea, .gender label) {
+    cursor: pointer;
+  }
+  
+  .gender label {
+    color:var(--text-color);
+  }
+  
+  .address :where(input, .select-box) {
+    margin-top: 10px;
+  }
+  
+  .select-box select {
+    height: 100%;
+    width: 100%;
+    outline: none;
+    border: none;
+    color: #808080;
+    font-size: 1em;
+    background: #e9f8fb;
+  }
+  
+  .form button {
+    height: 40px;
+    width: 100%;
+    color: #ffffff;
+    font-size: 1rem;
+    font-weight: 400;
+    margin-top: 15px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    background:var(--primary-color);
+  }
+  
+  .form button:hover {
+    background: var(--text-color);
+    
+  }
+  
+  /*Anti-span*/
+  .naoexibir { display:none; }
+
+ 

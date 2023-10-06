@@ -161,22 +161,22 @@ body {
     column-gap: 15px;
   }
   
-  .form .gender-box {
+  .form .pessoa-box {
     margin-top: 10px;
   }
   
-  .form :where(.gender-option, .gender) {
+  .form :where(.pessoa-option, .pessoa) {
     display: flex;
     align-items: center;
     column-gap: 50px;
     flex-wrap: wrap;
   }
   
-  .form .gender {
+  .form .pessoa {
     column-gap: 5px;
   }
   
-  .gender input {
+  .pessoa input {
   
     accent-color: var(--primary-color);
     float: left;
@@ -185,11 +185,11 @@ body {
   
   }
   
-  .form :where(.gender input,.gender textarea, .gender label) {
+  .form :where(.pessoa input,.pessoa textarea, .pessoa label) {
     cursor: pointer;
   }
   
-  .gender label {
+  .pessoa label {
     color:var(--text-color);
   }
   
@@ -229,4 +229,48 @@ body {
   /*Anti-span*/
   .naoexibir { display:none; }
 
+ /*footer*/
+.site-footer {
+  background-color: var(--primary-color);
+	text-align: center;
+	margin: 10px 0;
+	padding: 10px 0;
  
+}
+
+#social-wrapper {
+	text-align: center;
+}
+
+/*Social Media Icons*/
+.social-wrapper {
+	text-align: center;
+}
+
+.social-wrapper ul li {
+	display: inline;
+	margin: 0 5px;
+}
+
+.linkedin-icon,
+.instagram-icon,
+.github-icon {
+	margin-top: .625em;
+	width: 40px;
+	height: 40px;
+	opacity: .6;
+	filter: alpha(opacity=60); /* For IE8 and earlier */
+  border-radius: 25px;
+}
+
+.linkedin-icon:hover,
+.instagram-icon:hover,
+.github-icon:hover {
+	opacity: 1.0;
+	filter: alpha(opacity=100); /* For IE8 and earlier */
+}
+
+.footer-nav p {
+	text-align: center;
+  color: #fff;
+}
